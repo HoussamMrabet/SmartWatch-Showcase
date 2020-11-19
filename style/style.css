@@ -53,6 +53,39 @@
         color: #fff;
     }
 
+    #article #avatar #heart{
+        position: absolute;
+        top: 40%;
+        left: 43%;
+        width: 50px;
+        height: 50px;
+        animation: beat 5s linear 2s infinite alternate;
+    }
+
+    @keyframes beat {
+        0%   {transform: scale(1);}
+        25%  {transform: scale(1.25);}
+        50%  {transform: scale(1.5);}
+        75%  {transform: scale(1.25);}
+        100% {transform: scale(1);}
+    }
+
+    #article #avatar #heart-rate{
+        position: absolute;
+        top: 56%;
+        left: 42.5%;
+        width: 50px;
+        height: 50px;
+        color: #FFF;
+        font-weight: 600;
+        text-align: center;
+    }
+
+
+
+
+
+
 /***************************************************/
 /***************************************************/
 /*                Article right Side               */
