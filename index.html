@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <script src="script/script.js"></script>
-<body>
+<body onload="timer()">
 
     <header>
 
@@ -23,9 +23,7 @@
 
             <img id="myimage" src="https://i.imgur.com/iOeUBV7.png" alt="">
 
-            <p>
-                00:00:00
-            </p>
+            <p id="time"></p>
 
 
         </div>
@@ -55,7 +53,7 @@
                 <li><a href="">Heart Rate</a></li>
             </ul>
 
-            <button class="buy" onclick="black()">
+            <button class="buy">
                 BUY NOW
             </button>
 
