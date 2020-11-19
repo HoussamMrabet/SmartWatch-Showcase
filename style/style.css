@@ -31,15 +31,16 @@
         background-image: url('https://i.imgur.com/PTgQlim.png');
         position: relative;
         width: 30%;
-        height: 300px;
+        height: 400px;
         float: left;
     }
 
     #article #avatar img{
         position: absolute;
-        width: 100%;
+        transform: translateX(-10%);
+        width: 128%;
         height: 100%;
-        z-index: 0;
+        z-index: -1;
     }
 
     #article #avatar p{
@@ -49,7 +50,6 @@
         letter-spacing: 4px;
         font-weight: 600;
         text-align: center;
-        z-index: 1;
         color: #fff;
     }
 
@@ -60,10 +60,83 @@
 
     #article #info{
         width: 70%;
-        height: 300px;
+        height: 400px;
         float: right;
-        background-color: lightcoral;
-        padding: 20px;
+        padding: 10px;
     }
 
-    
+    #article #info .title{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    #article #info .description{
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+        word-break: normal;
+        width: 80%;
+    }
+
+    #article #info .section{
+        margin-bottom: 20px;
+    }
+
+    #article #info .colors{
+        margin-bottom: 40px;
+    }
+
+    #article #info .colors li{
+        padding: 10px 25px;
+        border-radius: 5px;
+        display: inline;
+        margin: 5px 15px 0 0;
+        cursor: pointer;
+    }
+
+    #article #info .colors li.black{
+        background-color:#23211f;
+    }
+
+    #article #info .colors li.red{
+        background-color:#ca3d22;
+    }
+
+    #article #info .colors li.blue{
+        background-color:#565681;
+    }
+
+    #article #info .colors li.pink{
+        background-color:#8a5362;
+    }
+
+    #article #info .colors li.purple{
+        background-color:#e9c7be;
+    }
+
+    #article #info .options{
+        margin-bottom: 35px;
+    }
+
+    #article #info .options li{
+        border-radius: 5px;
+        display: inline;
+        margin: 5px 15px 0 0;
+        cursor: pointer;
+    }
+
+    #article #info .options li a{
+        text-decoration: none;
+        color: #000;
+        background-color:#cfcfcf;
+        border: 1px solid #cfcfcf;
+        border-radius: 5px;
+        padding: 5px 18px;
+    }
+
+    #article .buy{
+        background-color: orange;
+        border: 1px solid orange;
+        padding: 15px 40px;
+        border-radius: 5px;
+    }
